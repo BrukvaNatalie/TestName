@@ -1,0 +1,76 @@
+Natasha_@Natasha MINGW32 /e/MainAcademy/test
+$ git init
+Initialized empty Git repository in E:/MainAcademy/test/.git/
+
+Natasha_@Natasha MINGW32 /e/MainAcademy/test (master)
+$ git add .
+
+Natasha_@Natasha MINGW32 /e/MainAcademy/test (master)
+$ git commit -m 'Brukva'
+[master (root-commit) f8311cc] Brukva
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+Natasha_@Natasha MINGW32 /e/MainAcademy/test (master)
+$ git checkout -b Name
+Switched to a new branch 'Name'
+
+Natasha_@Natasha MINGW32 /e/MainAcademy/test (Name)
+$ git add .
+
+Natasha_@Natasha MINGW32 /e/MainAcademy/test (Name)
+$ git status
+On branch Name
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   test.txt
+
+
+Natasha_@Natasha MINGW32 /e/MainAcademy/test (Name)
+$ git commit -m 'Natalie'
+[Name dc5727f] Natalie
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Natasha_@Natasha MINGW32 /e/MainAcademy/test (Name)
+$ git branch master
+fatal: A branch named 'master' already exists.
+
+Natasha_@Natasha MINGW32 /e/MainAcademy/test (Name)
+$ git checkout master
+Switched to branch 'master'
+
+Natasha_@Natasha MINGW32 /e/MainAcademy/test (master)
+$ git checkout Name
+Switched to branch 'Name'
+
+Natasha_@Natasha MINGW32 /e/MainAcademy/test (Name)
+$ git checkout master
+Switched to branch 'master'
+
+Natasha_@Natasha MINGW32 /e/MainAcademy/test (master)
+$ git add .
+
+Natasha_@Natasha MINGW32 /e/MainAcademy/test (master)
+$ git commit -m 'data'
+[master 13bb707] data
+ 1 file changed, 1 insertion(+)
+
+Natasha_@Natasha MINGW32 /e/MainAcademy/test (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Natasha_@Natasha MINGW32 /e/MainAcademy/test (master)
+$ git branch
+  Name
+* master
+
+Natasha_@Natasha MINGW32 /e/MainAcademy/test (master)
+$ git merge Name
+Auto-merging test.txt
+CONFLICT (content): Merge conflict in test.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Natasha_@Natasha MINGW32 /e/MainAcademy/test (master|MERGING)
+$
